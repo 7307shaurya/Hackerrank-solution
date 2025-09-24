@@ -4,4 +4,4 @@ if (arr_count %2!=0){
         result^=arr[i];
     }
 }
-return result;
+return result
