@@ -1,4 +1,10 @@
-qsort(w, w_count, sizeof(int), compare);
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
+int toys(int w_count, int* w) {
+    qsort(w, w_count, sizeof(int), compare);
+
     int count = 0;
     int i = 0;
     while (i < w_count) {
@@ -9,3 +15,4 @@ qsort(w, w_count, sizeof(int), compare);
         }
     }
     return count;
+}
