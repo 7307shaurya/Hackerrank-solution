@@ -2,6 +2,7 @@ int cmp(const void*a,const void*b){
     long x = ((long*)a)[0];
     long y =((long*)b)[0];
     if(x<y) return -1;
+
     if(x>y)return 1;
     return 0;
 }
