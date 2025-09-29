@@ -4,6 +4,7 @@ int turns = 0;
         n = n /2;
     }else{
         long power = 1L << ((long) log2(n));
+
         n = n - power;
     }
     turns++;
