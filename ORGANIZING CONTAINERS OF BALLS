@@ -1,4 +1,5 @@
-long long diff = *(long long *)a - *(long long *)b;
+int compare(const void * a, const void*b){
+    long long diff = *(long long *)a - *(long long *)b;
     return (diff>0)?1 : (diff<0)?-1:0;
  }char* organizingContainers(int container_rows, int container_columns, int** container) {
 int n = container_rows ;
@@ -6,6 +7,7 @@ long long * row_sums = malloc (n*sizeof(long long));
 long long *col_sums = malloc(n* sizeof(long long));
 for (int i =0; i<n; i++){
     row_sums[i]=0;
+
     col_sums[i]=0;
 }for(int i = 0; i<n; i++){
     for(int j =0;j<n; j++){
@@ -27,3 +29,4 @@ for (int i = 0; i<n; i++){
  free(row_sums);
  free(col_sums);
  return result;
+ }
