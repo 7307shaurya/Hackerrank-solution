@@ -10,6 +10,7 @@ int*result =malloc(player_count*sizeof(int));
 int idx =ucount -1;
 for (int i =0;i<player_count;i++){
     int score = player[i];
+
     while (idx>= 0 && score>= unique[idx]){
         idx--;
     }
