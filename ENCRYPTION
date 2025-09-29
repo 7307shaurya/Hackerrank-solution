@@ -5,6 +5,7 @@ for(int i=0;s[i];i++){
     }
 }
 s[len]='\0';
+
 double sqrt_len= sqrt(len);
 int rows = (int)floor(sqrt_len);
 int cols = (int)ceil(sqrt_len);
